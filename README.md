@@ -24,13 +24,20 @@ Connect to Databricks host:
 databricks auth login --host https://dbc-xxxxx-xxxx.cloud.databricks.com/
 
 pyproject.toml contains all the required dependencies
+To install dependencies:
+uv sync --extra dev
 
-uv sync --extra dev to install dependencies
-
+To uninstall certain package:
+uv pip uninstall databricks-connect
 
 Create repo folder inside Databricks Workspace
 ![alt text](image.png)
 
-
+Install and run build
 uv pip install build
 python -m build
+
+Databricks Serverless environment versions:
+https://docs.databricks.com/aws/en/release-notes/serverless/environment-version/
+
+![alt text](image-1.png)

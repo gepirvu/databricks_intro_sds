@@ -15,7 +15,7 @@ from loguru import logger
 from pyspark.sql import SparkSession
 
 from insurance.config import ProjectConfig
-from insurance.data_processor import DataProcessor
+from insurance.data_preprocessing import DataProcessor
 
 config = ProjectConfig.from_yaml(config_path="../project_config.yml", env="dev")
 
