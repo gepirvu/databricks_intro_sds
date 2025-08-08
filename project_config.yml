@@ -6,8 +6,8 @@ test:
   catalog_name: test
   schema_name: insurance
   data_path: dbfs:/Volumes/data_volume/pirvugeo/data/insurance.csv
-prd:
-  catalog_name: prd
+prod:
+  catalog_name: prod
   schema_name: insurance
   data_path: dbfs:/Volumes/data_volume/pirvugeo/data/insurance.csv
 
