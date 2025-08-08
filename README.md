@@ -22,3 +22,8 @@ export PATH="/c/Users/your_user/AppData/Roaming/Python/Scripts:$PATH"
 
 Connect to Databricks host:
 databricks auth login --host https://dbc-xxxxx-xxxx.cloud.databricks.com/
+
+pyproject.toml contains all the required dependencies
+
+uv sync --extra dev to install dependencies
+
