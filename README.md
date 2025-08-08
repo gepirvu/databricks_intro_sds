@@ -27,8 +27,10 @@ pyproject.toml contains all the required dependencies
 To install dependencies:
 uv sync --extra dev
 
-To uninstall certain package:
+To uninstall certain package, for example:
 uv pip uninstall databricks-connect
+
+Databricks-Connect comes with PySpark embeeded into it.
 
 Create repo folder inside Databricks Workspace
 ![alt text](image.png)
@@ -41,3 +43,6 @@ Databricks Serverless environment versions:
 https://docs.databricks.com/aws/en/release-notes/serverless/environment-version/
 
 ![alt text](image-1.png)
+
+By default the whl created after the build is not uploaded to the repository. But if you move the whl to other folder and sync the repo you can use the whl inside databricks UI:
+%pip install insurance-0.1.0-py3-none-any.whl instead of %pip install -e ..

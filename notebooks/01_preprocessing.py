@@ -60,7 +60,7 @@ logger.info("Test set shape: %s", X_test.shape)
 logger.info("Saving data to catalog")
 data_processor.save_to_catalog(X_train, X_test)
 
-# Enable change data feed (only once!)
-logger.info("Enable change data feed")
-data_processor.enable_change_data_feed()
+# Enable change data feed (Required only once)
+#logger.info("Enable change data feed")
+#data_processor.enable_change_data_feed()
 # COMMAND ---------- 
