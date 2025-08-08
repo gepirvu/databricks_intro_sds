@@ -27,3 +27,6 @@ pyproject.toml contains all the required dependencies
 
 uv sync --extra dev to install dependencies
 
+
+Create repo folder inside Databricks Workspace
+![alt text](image.png)
