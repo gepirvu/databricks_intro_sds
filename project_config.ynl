@@ -1,0 +1,39 @@
+dev:
+  catalog_name: dev
+  schema_name: insurance
+  data_path: dbfs:/Volumes/data_volume/pirvugeo/data/insurance.csv
+test:
+  catalog_name: test
+  schema_name: insurance
+  data_path: dbfs:/Volumes/data_volume/pirvugeo/data/insurance.csv
+prd:
+  catalog_name: prd
+  schema_name: insurance
+  data_path: dbfs:/Volumes/data_volume/pirvugeo/data/insurance.csv
+
+
+experiment_name_basic: /Shared/insurance_basic
+
+parameters:
+  learning_rate: [0.08, 0.09, 0.1, 0.11, 0.12]
+  n_estimators: [80, 90, 100, 110, 120]
+  max_depth: 6
+  num_leaves: [29, 30, 31, 32, 33]
+
+
+
+num_features:
+  - age
+  - bmi
+  - children
+
+cat_features:
+  - sex
+  - smoker
+  - region
+
+id_cols: []
+
+date_features: []
+
+target: charges
