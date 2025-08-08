@@ -30,3 +30,7 @@ uv sync --extra dev to install dependencies
 
 Create repo folder inside Databricks Workspace
 ![alt text](image.png)
+
+
+uv pip install build
+python -m build
